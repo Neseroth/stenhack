@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="granhus.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ST3NH4ACK</title>
+    
+</head>
+<body >
+
+  <audio id="ID"  loop controls >
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+
+  <video autoplay muted loop id="myVideo" >
+    <source src="autumn.mp4" type="video/mp4">
+  </video>
+
+  <div class="a">
+    <img width="100%" src="1111.png" alt="woops">
+  </div>
+
+  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  <div class="content" id="dis">
+  <img src="mute.png" id="dis alt="woops" width="300"  id="Mute">
+</div>
+  
+  <script defer>
+
+document.getElementById("ID").play();
+    
+   document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('ID').play();
+    document.removeEventListener('click', musicPlay);
+    document.getElementById('dis').style.display = 'none';
+}
+
+  </script>
+</body>
+</html>
